@@ -1,0 +1,17 @@
+$primary: red;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$glavna_bela: #FFFFFF;
+$glavna_zelena: #12A742;
+$glavna_siva: #22252C;
+$glavna_modra: #101828;
+
+.ozadje{
+    background-color: $gray-300;
+}
+
+.novirazred{
+    @extend .col-6;
+    @extend .ozadje;
+}
