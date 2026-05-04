@@ -11973,7 +11973,7 @@ textarea.form-control-lg {
   padding: 8px 20px;
   border-radius: 50px;
   text-decoration: none;
-  transition: 0.3s background-color;
+  transition: 0.3s;
   font-weight: 600;
   box-shadow: #101828;
 }
@@ -11989,6 +11989,19 @@ textarea.form-control-lg {
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.noga {
+  background-color: #101828;
+  color: rgba(185, 185, 185, 0.8352941176);
+}
+
+.povezave {
+  color: rgba(185, 185, 185, 0.8352941176);
+}
+
+.povezave:hover {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

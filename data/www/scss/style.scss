@@ -121,7 +121,7 @@ $glavna_modra: #101828;
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
-    transition: 0.3s background-color;
+    transition: 0.3s;
     font-weight: 600;
     box-shadow: #101828;
 }
@@ -138,3 +138,20 @@ $glavna_modra: #101828;
     top: 0;
     width: 100%;
 }
+
+
+.noga{
+    background-color: $glavna_modra;
+    color: #b9b9b9d5;
+}
+
+
+.povezave{
+    color: #b9b9b9d5;
+}
+
+
+.povezave:hover{
+    color: $glavna_bela;
+}
+
