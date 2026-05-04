@@ -1,11 +1,12 @@
-$primary: red;
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
 $glavna_bela: #FFFFFF;
 $glavna_zelena: #12A742;
 $glavna_siva: #22252C;
 $glavna_modra: #101828;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* NAVIGACIJA IN ZAČETNA STRAN */
 
 .navbar{
     background-color: #FFFFFF;
@@ -70,6 +71,7 @@ $glavna_modra: #101828;
     background: url(https://images.pexels.com/photos/5358849/pexels-photo-5358849.jpeg) no-repeat center;
     background-size: cover;
     width: 100%;
+    position: relative;
 }
 
 .hero-section::before{
@@ -106,7 +108,6 @@ $glavna_modra: #101828;
     text-decoration: none;
     transition: 0.3s background-color;
     font-weight: 600;
-    box-shadow: #101828;
 }
 
 .hero-section .button-narociSV:hover{
@@ -123,7 +124,6 @@ $glavna_modra: #101828;
     text-decoration: none;
     transition: 0.3s;
     font-weight: 600;
-    box-shadow: #101828;
 }
 
 .hero-section .button-klic:hover{
@@ -139,6 +139,42 @@ $glavna_modra: #101828;
     width: 100%;
 }
 
+/*OPIS*/
+
+.icon-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background-color: rgba($glavna_zelena, 0.15);
+    color: $glavna_zelena;
+    font-size: 1.4rem;
+}
+
+/*STORITVE*/
+
+.storitve {
+    background-color: #f8f8f6;
+}
+
+.storitve h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.storitve .card {
+    border-color: #e0e0e0 !important;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.storitve .card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* FOOTER */
 
 .noga{
     background-color: $glavna_modra;
