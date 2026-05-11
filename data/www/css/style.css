@@ -12038,4 +12038,86 @@ textarea.form-control-lg {
   color: #FFFFFF;
 }
 
+/*STORITVE*/
+.hero-section2 {
+  background: url(https://images.pexels.com/photos/5279346/pexels-photo-5279346.jpeg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.hero-section2::before {
+  background-color: rgba(18, 167, 65, 0.6156862745);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-section2 .container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-section2 h1, .hero-section2 .h1 {
+  font-size: 1.5em;
+}
+
+.hero-section2 h2, .hero-section2 .h2 {
+  font-size: 1.3em;
+}
+
+.hero-section2 .button-narociSV {
+  background-color: #FFFFFF;
+  color: #12A742;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+  font-weight: 600;
+}
+
+.hero-section2 .button-narociSV:hover {
+  background-color: rgba(185, 185, 185, 0.8352941176);
+}
+
+.hero-section2 .button-klic {
+  background-color: #FFFFFF;
+  color: #12A742;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.hero-section2 .button-klic:hover {
+  background-color: rgba(185, 185, 185, 0.8352941176);
+  transition: 0.3s ease-in-out;
+}
+
+.hero-section2 .button-klic:hover::after {
+  background-color: rgba(185, 185, 185, 0.8352941176);
+  content: " : +386 70/468 410";
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.storitve-list li {
+  padding: 4px 0;
+  color: var(--bs-body-color);
+}
+.storitve-list li i {
+  color: #12A742;
+  margin-right: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */

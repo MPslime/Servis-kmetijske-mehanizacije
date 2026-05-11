@@ -191,3 +191,88 @@ $glavna_modra: #101828;
     color: $glavna_bela;
 }
 
+
+
+/*STORITVE*/
+
+.hero-section2{
+    background: url(https://images.pexels.com/photos/5279346/pexels-photo-5279346.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.hero-section2::before{
+    background-color: #12a7419d;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section2 .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section2 h1{
+    font-size: 1.5em;
+}
+
+.hero-section2 h2{
+    font-size: 1.3em;
+}
+
+.hero-section2 .button-narociSV{
+    background-color: $glavna_bela;
+    color: $glavna_zelena;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    font-weight: 600;
+}
+
+.hero-section2 .button-narociSV:hover{
+    background-color: #b9b9b9d5;
+}
+
+.hero-section2 .button-klic{
+    background-color: $glavna_bela;
+    color: $glavna_zelena;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.hero-section2 .button-klic:hover{
+    background-color: #b9b9b9d5;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-section2 .button-klic:hover::after{
+    background-color: #b9b9b9d5;
+    content: " : +386 70/468 410";
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.storitve-list li {
+    padding: 4px 0;
+    color: var(--bs-body-color);
+
+    i {
+        color: $glavna_zelena;
+        margin-right: 8px;
+    }
+}
