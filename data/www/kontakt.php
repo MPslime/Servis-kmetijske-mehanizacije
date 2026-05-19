@@ -1,3 +1,7 @@
+<?php
+include 'db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="sl">
 
@@ -29,10 +33,10 @@
                             <a class="nav-link mx-lg-2" href="storitve.html">Storitve</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Rezervni deli</a>
+                            <a class="nav-link mx-lg-2" href="rezerva.html">Rezervni deli</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">O nas</a>
+                            <a class="nav-link mx-lg-2" href="kontakt.html">O nas</a>
                         </li>
                     </ul>
                 </div>
@@ -57,114 +61,74 @@
     </section>
     <!--hero konec-->
 
-    <!--PONUDBA-->
-        <section class="py-5">
-            <div class="container">
-                <div class="row g-4">
-        
-                    <div class="col-12 col-md-4">
-                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
-                            <div class="icon-box mb-4">
-                                <i class="bi bi-wrench"></i>
-                            </div>
-                            <h5 class="fw-bold">Strokovne popravila</h5>
-                            <p class="text-muted">Certificirani tehniki z dolgoletnimi izkušnjami pri kmetijski mehanizaciji</p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-4">
-                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
-                            <div class="icon-box mb-4">
-                                <i class="bi bi-clock"></i>
-                            </div>
-                            <h5 class="fw-bold">Hiter servis</h5>
-                            <p class="text-muted">Servis še isti dan za nujne popravila, da se lahko čimprej vrnete nazaj na delo</p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-4">
-                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
-                            <div class="icon-box mb-4">
-                                <i class="bi bi-patch-check"></i>
-                            </div>
-                            <h5 class="fw-bold">Kakovostni deli</h5>
-                            <p class="text-muted">Originalni in kakovostni nadomestni deli za vse večje blagovne znamke</p>
-                        </div>
-                    </div>
-        
+<article>
+                <div class="top-box">
+                    <h1>Naročite se na servis!</h1>
+                     <p>Načrtujte servis vaše kmetijske mehanizacije preko spleta.</p>
+                    <p>Termin bomo potrdili v 2 urah.</p>
                 </div>
-            </div>
-        </section>
-    <!--PONUDBA KONEC-->
+                <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ime">Ime</label>
+                        <input type="text" id="ime" name="ime" required>
+                    </div>
 
-    <!--STORITVE-->
-        <section class="storitve py-5">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2>Naše storitve</h2>
-                    <p class="text-muted">Celovite servisne rešitve za vse vaše potrebe</p>
+                    <div class="form-group">
+                        <label for="priimek">Priimek</label>
+                        <input type="text" id="priimek" name="priimek" required>
+                    </div>
                 </div>
-                <div class="row g-4">
-        
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card border rounded-4 p-4 h-100">
-                            <h5 class="fw-bold">Redno vzdrževanje</h5>
-                            <p class="text-muted">Ohranite vašo opremo v vrhunskem stanju z rednim servisiranjem</p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card border rounded-4 p-4 h-100">
-                            <h5 class="fw-bold">Nujna popravile</h5>
-                            <p class="text-muted">Nujna pomoč, da vas čim prej vrnemo na delo</p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card border rounded-4 p-4 h-100">
-                            <h5 class="fw-bold">Deli in dodatki</h5>
-                            <p class="text-muted">Široka izbira rezervnih delov in dodatkov na zalogi</p>
-                        </div>
-                    </div>
-        
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card border rounded-4 p-4 h-100">
-                            <h5 class="fw-bold">Diagnostika opreme</h5>
-                            <p class="text-muted">Napredna diagnostična orodja za hitro identifikacijo in odpravo težav</p>
-                        </div>
-                    </div>
-        
-                </div>
-                <div class="text-center mt-5">
-                    <a href="#" class="button-narociSV">Preglej vse storitve &rarr;</a>
-                </div>
-            </div>
-        </section>
-    <!--STORITVE KONEC-->
 
-    <!--Footer-->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="opis">Opis problema</label>
+                    <textarea id="opis" name="opis" required></textarea>
+                </div>
+            </form>
+
+                <div class="bottom-box">
+                    <button id="gumbjaka" type="submit">Potrdi rezervacijo</button>
+                </div>
+        </article>
+        </article><br/>
+
+        <!--Footer-->
     <footer class="noga py-5">
         <div class="container">
             <div class="row pb-3">
                 <div class="col col-lg-4">
                     <h3 class="text-white pb-3">AgroServis</h3>
-                    <p>Prefesionalen servis in popravilo kmetijske mehanizacije. Vaš zanesljiv partner za vzdrževanje vaše
+                    <p>Prefesionalen servis in popravilo kmetijske mehanizacije. Vaš zanesljiv partner za vzdrževanje
+                        vaše
                         opreme</p>
                 </div>
                 <div class="col">
                     <h4 class="text-white pb-3">Hitre povezave</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="povezave text-decoration-none ">Naše storitve</a></li>
-                        <li><a href="#" class="povezave text-decoration-none ">Rezervni deli</a></li>
-                        <li><a href="#" class="povezave text-decoration-none ">Naroči servis</a></li>
-                        <li><a href="#" class="povezave text-decoration-none ">Kontakt</a></li>
+                        <li><a href="storitve.html" class="povezave text-decoration-none ">Naše storitve</a></li>
+                        <li><a href="rezerva.html" class="povezave text-decoration-none ">Rezervni deli</a></li>
+                        <li><a href="servis.html" class="povezave text-decoration-none ">Naroči servis</a></li>
+                        <li><a href="kontakt.html" class="povezave text-decoration-none ">Kontakt</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h4 class="text-white pb-3">Kontakt</h4>
                     <ul class="list-unstyled">
                         <li><a href="https://www.google.com/maps/place/Pri+Habakuku+37,+2000+Maribor/@46.5176564,15.615472,99m/data=!3m1!1e3!4m6!3m5!1s0x476f7830a7211db3:0xe245f32fe8619aa2!8m2!3d46.5176583!4d15.6158286!16s%2Fg%2F11vlsdn3l7?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
-                                class="povezave text-decoration-none"><i class="bi bi-geo-alt-fill me-2"></i>Pri Habakuku
+                                class="povezave text-decoration-none"><i class="bi bi-geo-alt-fill me-2"></i>Pri
+                                Habakuku
                                 37, 2000 Maribor</a></li>
                         <li><a href="tel:+38670468410" class="povezave text-decoration-none"><i
                                     class="bi bi-telephone-fill me-2"></i>+386 70 468 410</a></li>
@@ -183,7 +147,8 @@
             </div>
             <hr>
             <div>
-                <p class="d-flex align-items-center justify-content-center text-white pt-3">© 2026 AgroServis. Vse pravice
+                <p class="d-flex align-items-center justify-content-center text-white pt-3">© 2026 AgroServis. Vse
+                    pravice
                     pridržane.</p>
             </div>
         </div>
