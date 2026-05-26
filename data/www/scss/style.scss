@@ -1,0 +1,383 @@
+$glavna_bela: #FFFFFF;
+$glavna_zelena: #12A742;
+$glavna_siva: #22252C;
+$glavna_modra: #101828;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* NAVIGACIJA IN ZAČETNA STRAN */
+
+.navbar{
+    background-color: #FFFFFF;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.button-narociSV{
+    background-color: $glavna_siva;
+    color: $glavna_bela;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.button-narociSV:hover{
+    background-color: #333842;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active{
+    color: black;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 2px;
+    background-color: $glavna_zelena;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+.hero-section{
+    background: url(https://images.pexels.com/photos/5358849/pexels-photo-5358849.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.hero-section::before{
+    background-color: #12a7419d;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1{
+    font-size: 1.5em;
+}
+
+.hero-section h2{
+    font-size: 1.3em;
+}
+
+.hero-section .button-narociSV{
+    background-color: $glavna_bela;
+    color: $glavna_zelena;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    font-weight: 600;
+}
+
+.hero-section .button-narociSV:hover{
+    background-color: #b9b9b9d5;
+}
+
+.hero-section .button-klic{
+    background-color: $glavna_bela;
+    color: $glavna_zelena;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.hero-section .button-klic:hover{
+    background-color: #b9b9b9d5;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-section .button-klic:hover::after{
+    background-color: #b9b9b9d5;
+    content: " : +386 70/468 410";
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/*OPIS*/
+
+.icon-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background-color: rgba($glavna_zelena, 0.15);
+    color: $glavna_zelena;
+    font-size: 1.4rem;
+}
+
+/*STORITVE*/
+
+.storitve {
+    background-color: #f8f8f6;
+}
+
+.storitve h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.storitve .card {
+    border-color: #e0e0e0 !important;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.storitve .card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* FOOTER */
+
+.noga{
+    background-color: $glavna_modra;
+    color: #b9b9b9d5;
+}
+
+
+.povezave{
+    color: #b9b9b9d5;
+}
+
+
+.povezave:hover{
+    color: $glavna_bela;
+}
+
+
+
+/*STORITVE*/
+
+.hero-section2{
+    background: url(https://images.pexels.com/photos/5279346/pexels-photo-5279346.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.hero-section2::before{
+    background-color: #12a7419d;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section2 .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section2 h1{
+    font-size: 1.5em;
+}
+
+.hero-section2 h2{
+    font-size: 1.3em;
+}
+
+.hero-section2 .button-narociSV{
+    background-color: $glavna_bela;
+    color: $glavna_zelena;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    font-weight: 600;
+}
+
+.hero-section2 .button-narociSV:hover{
+    background-color: #b9b9b9d5;
+}
+
+.hero-section2 .button-klic{
+    background-color: $glavna_bela;
+    color: $glavna_zelena;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.hero-section2 .button-klic:hover{
+    background-color: #b9b9b9d5;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-section2 .button-klic:hover::after{
+    background-color: #b9b9b9d5;
+    content: " : +386 70/468 410";
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.storitve-list li {
+    padding: 4px 0;
+    color: var(--bs-body-color);
+
+    i {
+        color: $glavna_zelena;
+        margin-right: 8px;
+    }
+}
+
+.cta {
+    background-color: $glavna_zelena;
+}
+
+.button-cta {
+    background-color: transparent;
+    color: $glavna_zelena;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 2px solid $glavna_bela;
+    color: $glavna_bela;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.button-cta:hover {
+    background-color: $glavna_bela;
+    color: $glavna_zelena;
+}
+
+
+/* kontakt */
+
+article {
+    background-color: #e9e9e9;
+    padding: 60 60 60 60;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gumbjaka {
+    display: block;
+    margin: 0 auto;
+    background-color: #d8cde8;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-box {
+    background-color: #12A742;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10 10px 50px 0px;
+    margin: 0 0 30px 0;
+    width: 2000px;
+}
+
+.bottom-box {
+   background-color: #12A742;
+    height: 250px;
+    width: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
