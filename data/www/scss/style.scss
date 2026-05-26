@@ -1,0 +1,156 @@
+$glavna_bela: #FFFFFF;
+$glavna_zelena: #12A742;
+$glavna_siva: #22252C;
+$glavna_modra: #101828;
+
+.navbar{
+    background-color: #FFFFFF;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.button-narociSV{
+    background-color: $glavna_siva;
+    color: $glavna_bela;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.button-narociSV:hover{
+    background-color: $glavna_siva
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active{
+    color: black;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: $glavna_zelena;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+.noga{
+    background-color: $glavna_modra;
+    color: #b9b9b9d5;
+}
+
+
+.povezave{
+    color: #b9b9b9d5;
+}
+
+
+.povezave:hover{
+    color: $glavna_bela;
+}
+
+article {
+    background-color: $glavna_bela;
+    padding: 60 60 60 60;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: $glavna_bela;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-box {
+    background-color: $glavna_zelena;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10 10px 50px 0px;
+    margin: 0 0 30px 0;
+    width: 2000px;
+}
+
+.bottom-box {
+   background-color: $glavna_zelena;
+    height: 250px;
+    width: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
