@@ -20,7 +20,7 @@ include 'db.php';
         <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
             <h1>Strokovni servis kmetijske mehanizacije</h1>
             <h2>Naročite servis le v nekaj minutah</h2>
-            <a href="#" class="button-narociSV">Naroči Servis</a>
+            <a href="kontakt.php" class="button-narociSV">Naroči Servis</a>
             <a href="tel:+38670468410" class="button-klic">Pokliči za nujno pomoč</a>
         </div>
     </section>
@@ -107,7 +107,7 @@ include 'db.php';
 
             </div>
             <div class="text-center mt-5">
-                <a href="#" class="button-narociSV">Preglej vse storitve &rarr;</a>
+                <a href="storitve.php" class="button-narociSV">Preglej vse storitve &rarr;</a>
             </div>
         </div>
     </section>
@@ -118,7 +118,7 @@ include 'db.php';
         <div class="container text-center">
             <h2 class="fw-bold text-white">Potrebujete servis danes?</h2>
             <p class="text-white mt-2 mb-4">Naročite svoj termin preko spleta ali nas pokličite za nujno pomoč</p>
-            <a href="#" class="button-cta">Naroči servis &rarr;</a>
+            <a href="kontakt.php" class="button-cta">Naroči servis &rarr;</a>
         </div>
     </section>
     <!--GUMB konec-->

@@ -10,7 +10,7 @@
                 <h4 class="text-white pb-3">Hitre povezave</h4>
                 <ul class="list-unstyled">
                     <li><a href="storitve.php" class="povezave text-decoration-none ">Na�e storitve</a></li>
-                    <li><a href="#" class="povezave text-decoration-none ">Naroci servis</a></li>
+                    <li><a href="kontakt.php" class="povezave text-decoration-none ">Naroci servis</a></li>
                     <li><a href="Onas.php" class="povezave text-decoration-none ">O nas</a></li>
                     <li><a href="kontakt.php" class="povezave text-decoration-none ">Kontakt</a></li>
                 </ul>
