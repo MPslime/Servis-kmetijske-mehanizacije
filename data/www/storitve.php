@@ -15,7 +15,7 @@
     <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
         <h1>Strokovni servis kmetijske mehanizacije</h1>
         <h2>Naročite servis le v nekaj minutah</h2>
-        <a href="#" class="button-narociSV">Naroči Servis</a>
+        <a href="kontakt.php" class="button-narociSV">Naroči Servis</a>
         <a href="tel:+38670468410" class="button-klic">Pokliči za nujno pomoč</a>
     </div>
 </section>
